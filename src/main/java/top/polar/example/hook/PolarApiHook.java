@@ -51,6 +51,7 @@ public class PolarApiHook implements Runnable, Listener {
         }
     }
 
+    // This is an example listener and has not been registered yet.
     @EventHandler
     public void onJoin(PlayerJoinEvent event) {
         if (polarApi == null) {
