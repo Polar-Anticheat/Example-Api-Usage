@@ -1,0 +1,5 @@
+name: ExamplePlugin
+author: Shorty
+version: 1.0.0
+main: top.polar.example.ApiExample
+depend: ["PolarLoader"]
