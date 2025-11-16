@@ -9,7 +9,7 @@ import top.polar.example.hook.PolarApiHook;
 
  ****
  The developers cannot guarantee functionality if the API is not used
- as instructed by our documentation or the comments present in this file.
+ as shown by the code in this example or the comments present in the files.
  ****
 
  This plugin needs to depend on "PolarLoader"
