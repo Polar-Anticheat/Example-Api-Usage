@@ -1,5 +1,7 @@
 package top.polar.example;
 
+import org.bukkit.Bukkit;
+import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 import top.polar.api.loader.LoaderApi;
 import top.polar.example.hook.PolarApiHook;
@@ -15,7 +17,7 @@ import top.polar.example.hook.PolarApiHook;
  This plugin needs to depend on "PolarLoader"
 
  */
-public class ApiExample extends JavaPlugin {
+public class ApiExample extends JavaPlugin implements Listener {
 
     @Override
     public void onLoad() {
@@ -32,5 +34,11 @@ public class ApiExample extends JavaPlugin {
          so it needs to be registered in onLoad.
          */
         LoaderApi.registerEnableCallback(polarApiHook);
+    }
+
+    @Override
+    public void onEnable() {
+        Bukkit.getPluginManager().registerEvents(this, this);
+
     }
 }
